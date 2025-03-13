@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Pokémon</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=e2u7E9taQbyf&format=png&color=000000" type="image/x-icon">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Explorador de Pokémon</h1>
+            <div class="contenedor-busqueda">
+                <input type="text" id="input-busqueda" placeholder="Ingresa el nombre del Pokémon...">
+                <button id="btn-buscar">Buscar</button>
+            </div>
+        </header>
+
+        <div class="contenedor-filtros">
+            <h3>Filtrar por Tipo:</h3>
+            <div id="filtros-tipo" class="botones-filtro">
+                <!-- Los botones de tipo se añadirán aquí dinámicamente -->
+            </div>
+        </div>
+
+        <div id="detalle-pokemon" class="detalle-pokemon oculto">
+            <!-- Vista detallada de un solo Pokémon -->
+        </div>
+
+        <div id="grid-pokemon" class="grid-pokemon">
+            <!-- Las tarjetas de Pokémon se añadirán aquí dinámicamente -->
+        </div>
+
+        <div class="paginacion">
+            <button id="btn-anterior" disabled>Anterior</button>
+            <span id="info-pagina">Página 1</span>
+            <button id="btn-siguiente">Siguiente</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
